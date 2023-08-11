@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'pyiron_GB_energy_example';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="pyiron example notebook" href="example.html" />
+    <link rel="prev" title="pyiron LAMMPS job" href="README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,7 +158,6 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="example.html">pyiron example notebook</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">A pyiron workflow to calculate a grain boundary energy using multiple potentials, and compare to literature DFT data.</a></li>
 </ul>
 
@@ -362,7 +361,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "4f491a9392fd4796ba1323dfe88936fb", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "02dd55e19f874f09833c1a9c37922160", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -421,7 +420,7 @@ a <span class="math notranslate nohighlight">\(\Sigma 3 [1 \bar{1}0](111)\)</spa
 <p>It automatically finds the applicable potentials given the structure provided.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">job</span><span class="o">.</span><span class="n">list_potentials</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">job</span><span class="o">.</span><span class="n">list_potentials</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -435,124 +434,7 @@ a <span class="math notranslate nohighlight">\(\Sigma 3 [1 \bar{1}0](111)\)</spa
  &#39;2004--Ackland-G-J--Fe-P--LAMMPS--ipr1&#39;,
  &#39;2004--Zhou-X-W--Fe--LAMMPS--ipr2&#39;,
  &#39;2005--Lee-B-J--Fe-Cu--LAMMPS--ipr1&#39;,
- &#39;2005--Mendelev-M-I--Al-Fe--LAMMPS--ipr1&#39;,
- &#39;2006--Chamati-H--Fe--LAMMPS--ipr1&#39;,
- &#39;2006--Kim-J--Fe-Pt--LAMMPS--ipr1&#39;,
- &#39;2006--Lee-B-J--Fe-C--LAMMPS--ipr1&#39;,
- &#39;2006--Lee-B-J--Fe-N--LAMMPS--ipr1&#39;,
- &#39;2007--Lee-B-J--Fe-H--LAMMPS--ipr1&#39;,
- &#39;2007--Mendelev-M-I--V-Fe--LAMMPS--ipr1&#39;,
- &#39;2008--Hepburn-D-J--Fe-C--LAMMPS--ipr1&#39;,
- &#39;2008--Sa-I--Fe-Nb--LAMMPS--ipr1&#39;,
- &#39;2008--Sa-I--Fe-Ti--LAMMPS--ipr1&#39;,
- &#39;2009--Bonny-G--Fe-Cu-Ni--LAMMPS--ipr1&#39;,
- &#39;2009--Bonny-G--Fe-Ni--LAMMPS--ipr1&#39;,
- &#39;2009--Kim-H-K--Fe-Ti-C--LAMMPS--ipr2&#39;,
- &#39;2009--Kim-Y-M--Fe-Mn--LAMMPS--ipr1&#39;,
- &#39;2009--Olsson-P-A-T--Fe--LAMMPS--ipr1&#39;,
- &#39;2009--Stukowski-A--Fe-Cr--LAMMPS--ipr1&#39;,
- &#39;2010--Kim-H-K--Fe-Nb-C--LAMMPS--ipr1&#39;,
- &#39;2010--Lee-E--Fe-Al--LAMMPS--ipr1&#39;,
- &#39;2010--Malerba-L--Fe--LAMMPS--ipr1&#39;,
- &#39;2011--Bonny-G--Fe-Cr--LAMMPS--ipr2&#39;,
- &#39;2011--Bonny-G--Fe-Cr--LAMMPS--ipr3&#39;,
- &#39;2011--Bonny-G--Fe-Ni-Cr--LAMMPS--ipr1&#39;,
- &#39;2011--Bonny-G--Fe-Ni-Cr--LAMMPS--ipr2&#39;,
- &#39;2011--Chiesa-S--Fe-33--LAMMPS--ipr1&#39;,
- &#39;2012--Jelinek-B--Al-Si-Mg-Cu-Fe--LAMMPS--ipr2&#39;,
- &#39;2012--Ko-W-S--Fe-P--LAMMPS--ipr1&#39;,
- &#39;2012--Proville-L--Fe--LAMMPS--ipr1&#39;,
- &#39;2013--Bonny-G--Fe-Cr-W--LAMMPS--ipr2&#39;,
- &#39;2013--Bonny-G--Fe-Cr-W--LAMMPS--ipr3&#39;,
- &#39;2013--Bonny-G--Fe-Ni-Cr--LAMMPS--ipr1&#39;,
- &#39;2013--Bonny-G--Fe-W--LAMMPS--ipr1&#39;,
- &#39;2013--Henriksson-K-O-E--Fe-C--LAMMPS--ipr1&#39;,
- &#39;2014--Liyanage-L-S-I--Fe-C--LAMMPS--ipr2&#39;,
- &#39;2015--Asadi-E--Fe--LAMMPS--ipr1&#39;,
- &#39;2015--Eich-S-M--Fe-Cr--LAMMPS--ipr1&#39;,
- &#39;2017--Beland-L-K--Fe-Ni-Cr--LAMMPS--ipr1&#39;,
- &#39;2017--Choi-W-M--Co-Fe--LAMMPS--ipr1&#39;,
- &#39;2017--Wu-C--Ni-Cr-Fe--LAMMPS--ipr1&#39;,
- &#39;2017--Wu-C--Ni-Fe--LAMMPS--ipr1&#39;,
- &#39;2018--Choi-W-M--Co-Ni-Cr-Fe-Mn--LAMMPS--ipr1&#39;,
- &#39;2018--Etesami-S-A--Fe--LAMMPS--ipr1&#39;,
- &#39;2018--Farkas-D--Fe-Ni-Cr-Co-Cu--LAMMPS--ipr2&#39;,
- &#39;2018--Jeong-G-U--Pd-Fe--LAMMPS--ipr1&#39;,
- &#39;2018--Zhou-X-W--Fe-Ni-Cr--LAMMPS--ipr1&#39;,
- &#39;2018--Zhou-X-W--Fe-Ni-Cr--LAMMPS--ipr2&#39;,
- &#39;2019--Aslam-I--Fe-Mn-Si-C--LAMMPS--ipr1&#39;,
- &#39;2019--Byggmastar-J--Fe-O--LAMMPS--ipr1&#39;,
- &#39;2019--Mendelev-M-I--Fe-Ni-Cr--LAMMPS--ipr1&#39;,
- &#39;2020--Byggmastar-J--Fe--LAMMPS--ipr1&#39;,
- &#39;2020--Farkas-D--Fe-Ni-Cr-Co-Al--LAMMPS--ipr1&#39;,
- &#39;2020--Groger-R--Co-Cr-Fe-Mn-Ni--LAMMPS--ipr1&#39;,
- &#39;2020--Mori-H--Fe--LAMMPS--ipr1&#39;,
- &#39;2021--Deluigi-O-R--Fe-Ni-Cr-Co-Cu--LAMMPS--ipr1&#39;,
- &#39;2021--Starikov-S--Fe--LAMMPS--ipr1&#39;,
- &#39;2021--Starikov-S--Fe--LAMMPS--ipr2&#39;,
- &#39;2021--Wen-M--Fe-H--LAMMPS--ipr1&#39;,
- &#39;2022--Mahata-A--Al-Fe--LAMMPS--ipr1&#39;,
- &#39;2022--Starikov-S--Fe-Cr-H--LAMMPS--ipr1&#39;,
- &#39;2022--Sun-Y--Fe--LAMMPS--ipr1&#39;,
- &#39;EAM_Dynamo_AcklandBaconCalder_1997_Fe__MO_142799717516_005&#39;,
- &#39;EAM_Dynamo_AcklandMendelevSrolovitz_2004_FeP__MO_884343146310_005&#39;,
- &#39;EAM_Dynamo_BonnyCastinBullens_2013_FeW__MO_737567242631_000&#39;,
- &#39;EAM_Dynamo_BonnyCastinTerentyev_2013_FeNiCr__MO_763197941039_000&#39;,
- &#39;EAM_Dynamo_BonnyPasianotCastin_2009_FeCuNi__MO_469343973171_005&#39;,
- &#39;EAM_Dynamo_BonnyPasianotMalerba_2009_FeNi__MO_267721408934_005&#39;,
- &#39;EAM_Dynamo_ChamatiPapanicolaouMishin_2006_Fe__MO_960699513424_000&#39;,
- &#39;EAM_Dynamo_HepburnAckland_2008_FeC__MO_143977152728_005&#39;,
- &#39;EAM_Dynamo_Marinica_2007_Fe__MO_466808877130_000&#39;,
- &#39;EAM_Dynamo_Marinica_2011_Fe__MO_255315407910_000&#39;,
- &#39;EAM_Dynamo_MendelevBorovikov_2020_FeNiCr__MO_922363340570_000&#39;,
- &#39;EAM_Dynamo_MendelevHanSon_2007_VFe__MO_249706810527_005&#39;,
- &#39;EAM_Dynamo_MendelevHanSrolovitz_2003Potential2_Fe__MO_769582363439_005&#39;,
- &#39;EAM_Dynamo_MendelevHanSrolovitz_2003Potential5_Fe__MO_942420706858_005&#39;,
- &#39;EAM_Dynamo_MendelevHanSrolovitz_2003_Fe__MO_807997826449_000&#39;,
- &#39;EAM_Dynamo_MendelevSrolovitzAckland_2005_AlFe__MO_577453891941_005&#39;,
- &#39;EAM_Dynamo_Mendelev_2003_Fe__MO_546673549085_000&#39;,
- &#39;EAM_Dynamo_ZhouJohnsonWadley_2004NISTretabulation_Fe__MO_681088298208_000&#39;,
- &#39;EAM_Dynamo_ZhouJohnsonWadley_2004_Fe__MO_650279905230_005&#39;,
- &#39;EAM_Magnetic2GQuintic_ChiesaDerletDudarev_2011_Fe__MO_140444321607_002&#39;,
- &#39;EAM_MagneticCubic_DudarevDerlet_2005_Fe__MO_135034229282_002&#39;,
- &#39;EAM_MagneticCubic_MendelevHanSrolovitz_2003_Fe__MO_856295952425_002&#39;,
- &#39;MEAM_LAMMPS_AsadiZaeemNouranian_2015_Fe__MO_492310898779_000&#39;,
- &#39;MEAM_LAMMPS_ChoiJoSohn_2018_CoNiCrFeMn__MO_115454747503_000&#39;,
- &#39;MEAM_LAMMPS_ChoiKimSeol_2017_CoFe__MO_179158257180_000&#39;,
- &#39;MEAM_LAMMPS_EtesamiAsadi_2018_Fe__MO_549900287421_000&#39;,
- &#39;MEAM_LAMMPS_JelinekGrohHorstemeyer_2012_AlSiMgCuFe__MO_262519520678_000&#39;,
- &#39;MEAM_LAMMPS_JeongParkDo_2018_PdFe__MO_924736622203_000&#39;,
- &#39;MEAM_LAMMPS_KimJungLee_2009_FeTiC__MO_110119204723_000&#39;,
- &#39;MEAM_LAMMPS_KimJungLee_2010_FeNbC__MO_072689718616_000&#39;,
- &#39;MEAM_LAMMPS_KimLee_2006_PtFe__MO_343168101490_000&#39;,
- &#39;MEAM_LAMMPS_KimShinLee_2009_FeMn__MO_058735400462_000&#39;,
- &#39;MEAM_LAMMPS_KoJimLee_2012_FeP__MO_179420363944_000&#39;,
- &#39;MEAM_LAMMPS_LeeJang_2007_FeH__MO_095610951957_000&#39;,
- &#39;MEAM_LAMMPS_LeeLeeKim_2006_FeN__MO_432861766738_000&#39;,
- &#39;MEAM_LAMMPS_LeeLee_2010_FeAl__MO_332211522050_000&#39;,
- &#39;MEAM_LAMMPS_LeeWirthShim_2005_FeCu__MO_063626065437_000&#39;,
- &#39;MEAM_LAMMPS_Lee_2006_FeC__MO_856956178669_000&#39;,
- &#39;MEAM_LAMMPS_LiyanageKimHouze_2014_FeC__MO_075279800195_000&#39;,
- &#39;MEAM_LAMMPS_SaLee_2008_FeTi__MO_260546967793_000&#39;,
- &#39;MEAM_LAMMPS_SaLee_2008_NbFe__MO_162036141261_000&#39;,
- &#39;MEAM_LAMMPS_WuLeeSu_2017_NiCrFe__MO_912636107108_000&#39;,
- &#39;MEAM_LAMMPS_WuLeeSu_2017_NiFe__MO_321233176498_000&#39;,
- &#39;MJ_MorrisAgaLevashov_2008_Fe__MO_857282754307_003&#39;,
- &#39;Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Fe__MO_147603128437_004&#39;,
- &#39;Morse_Shifted_GirifalcoWeizer_1959LowCutoff_Fe__MO_331285495617_004&#39;,
- &#39;Morse_Shifted_GirifalcoWeizer_1959MedCutoff_Fe__MO_984358344196_004&#39;,
- &#39;Tersoff_LAMMPS_MuellerErhartAlbe_2007_Fe__MO_137964310702_003&#39;,
- &#39;Sim_LAMMPS_EAMCD_StukowskiSadighErhart_2009_FeCr__SM_775564499513_000&#39;,
- &#39;Sim_LAMMPS_EAM_BonnyCastinBullens_2013_FeCrW__SM_699257350704_000&#39;,
- &#39;Sim_LAMMPS_EAM_BonnyPasianotTerentyev_2011_FeCr__SM_237089298463_000&#39;,
- &#39;Sim_LAMMPS_MEAM_AsadiZaeemNouranian_2015_Fe__SM_042630680993_000&#39;,
- &#39;Sim_LAMMPS_MEAM_EtesamiAsadi_2018_Fe__SM_267016608755_000&#39;,
- &#39;Sim_LAMMPS_MEAM_JelinekGrohHorstemeyer_2012_AlSiMgCuFe__SM_656517352485_000&#39;,
- &#39;Sim_LAMMPS_MEAM_KimJungLee_2009_FeTiC__SM_531038274471_000&#39;,
- &#39;Sim_LAMMPS_MEAM_LiyanageKimHouze_2014_FeC__SM_652425777808_000&#39;,
- &#39;Sim_LAMMPS_ReaxFF_AryanpourVanDuinKubicki_2010_FeHO__SM_222964216001_001&#39;,
- &#39;Sim_LAMMPS_TersoffZBL_ByggmastarGranberg_2020_Fe__SM_958863895234_000&#39;,
- &#39;Sim_LAMMPS_TersoffZBL_HenrikssonBjorkasNordlund_2013_FeC__SM_473463498269_000&#39;]
+ &#39;2005--Mendelev-M-I--Al-Fe--LAMMPS--ipr1&#39;]
 </pre></div>
 </div>
 </div>
@@ -561,9 +443,9 @@ a <span class="math notranslate nohighlight">\(\Sigma 3 [1 \bar{1}0](111)\)</spa
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">potentials_tested</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">list_potentials</span><span class="p">()</span>
 <span class="n">GB_energy_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">potential</span> <span class="ow">in</span> <span class="n">potentials_tested</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">potential</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">potentials_tested</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">job_GB_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;S3_GB_</span><span class="si">{</span><span class="n">potential</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">job_GB_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;S3_GB_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span>
         <span class="n">job_GB</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">create_job</span><span class="p">(</span><span class="n">job_type</span><span class="o">=</span><span class="n">pr</span><span class="o">.</span><span class="n">job_type</span><span class="o">.</span><span class="n">Lammps</span><span class="p">,</span> <span class="n">job_name</span><span class="o">=</span><span class="n">job_GB_name</span><span class="p">)</span>
         <span class="n">job_GB</span><span class="o">.</span><span class="n">structure</span> <span class="o">=</span> <span class="n">ase_to_pyiron</span><span class="p">(</span><span class="n">gb</span><span class="p">)</span>
         <span class="n">job_GB</span><span class="o">.</span><span class="n">potential</span> <span class="o">=</span> <span class="n">potential</span>
@@ -571,7 +453,7 @@ a <span class="math notranslate nohighlight">\(\Sigma 3 [1 \bar{1}0](111)\)</spa
                             <span class="n">max_iter</span><span class="o">=</span><span class="mi">10000</span><span class="p">)</span>
         <span class="n">job_GB</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">delete_existing_job</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         
-        <span class="n">job_SLAB_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;S3_SLAB_</span><span class="si">{</span><span class="n">potential</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">job_SLAB_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;S3_SLAB_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span>
         <span class="n">job_SLAB</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">create_job</span><span class="p">(</span><span class="n">job_type</span><span class="o">=</span><span class="n">pr</span><span class="o">.</span><span class="n">job_type</span><span class="o">.</span><span class="n">Lammps</span><span class="p">,</span> <span class="n">job_name</span><span class="o">=</span><span class="n">job_SLAB_name</span><span class="p">)</span>
         <span class="n">job_SLAB</span><span class="o">.</span><span class="n">structure</span> <span class="o">=</span> <span class="n">ase_to_pyiron</span><span class="p">(</span><span class="n">slab</span><span class="p">)</span>
         <span class="n">job_SLAB</span><span class="o">.</span><span class="n">potential</span> <span class="o">=</span> <span class="n">potential</span>
@@ -592,85 +474,370 @@ a <span class="math notranslate nohighlight">\(\Sigma 3 [1 \bar{1}0](111)\)</spa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_1997mmAcklandmGmJmmFemmLAMMPSmmipr1 was saved and received the ID: 323
-The job S3_SLAB_1997mmAcklandmGmJmmFemmLAMMPSmmipr1 was saved and received the ID: 324
-The job S3_GB_1998mmMeyermRmmFemmLAMMPSmmipr1 was saved and received the ID: 325
-The job S3_SLAB_1998mmMeyermRmmFemmLAMMPSmmipr1 was saved and received the ID: 326
-The job S3_GB_2001mmLeemBmJmmFemmLAMMPSmmipr1 was saved and received the ID: 327
-The job S3_SLAB_2001mmLeemBmJmmFemmLAMMPSmmipr1 was saved and received the ID: 328
-The job S3_GB_2001mmLeemBmJmmFemCrmmLAMMPSmmipr1 was saved and received the ID: 329
-The job S3_SLAB_2001mmLeemBmJmmFemCrmmLAMMPSmmipr1 was saved and received the ID: 330
-The job S3_GB_2003mmMendelevmMmImmFem2mmLAMMPSmmipr3 was saved and received the ID: 331
-The job S3_SLAB_2003mmMendelevmMmImmFem2mmLAMMPSmmipr3 was saved and received the ID: 332
-The job S3_GB_2003mmMendelevmMmImmFem5mmLAMMPSmmipr1 was saved and received the ID: 333
-The job S3_SLAB_2003mmMendelevmMmImmFem5mmLAMMPSmmipr1 was saved and received the ID: 334
-The job S3_GB_2004mmAcklandmGmJmmFemPmmLAMMPSmmipr1 was saved and received the ID: 335
-The job S3_SLAB_2004mmAcklandmGmJmmFemPmmLAMMPSmmipr1 was saved and received the ID: 336
-The job S3_GB_2004mmZhoumXmWmmFemmLAMMPSmmipr2 was saved and received the ID: 337
-The job S3_SLAB_2004mmZhoumXmWmmFemmLAMMPSmmipr2 was saved and received the ID: 338
-The job S3_GB_2005mmLeemBmJmmFemCummLAMMPSmmipr1 was saved and received the ID: 339
-The job S3_SLAB_2005mmLeemBmJmmFemCummLAMMPSmmipr1 was saved and received the ID: 340
-The job S3_GB_2005mmMendelevmMmImmAlmFemmLAMMPSmmipr1 was saved and received the ID: 341
-The job S3_SLAB_2005mmMendelevmMmImmAlmFemmLAMMPSmmipr1 was saved and received the ID: 342
-The job S3_GB_2006mmChamatimHmmFemmLAMMPSmmipr1 was saved and received the ID: 343
-The job S3_SLAB_2006mmChamatimHmmFemmLAMMPSmmipr1 was saved and received the ID: 344
-The job S3_GB_2006mmKimmJmmFemPtmmLAMMPSmmipr1 was saved and received the ID: 345
-The job S3_SLAB_2006mmKimmJmmFemPtmmLAMMPSmmipr1 was saved and received the ID: 346
-The job S3_GB_2006mmLeemBmJmmFemCmmLAMMPSmmipr1 was saved and received the ID: 347
-The job S3_SLAB_2006mmLeemBmJmmFemCmmLAMMPSmmipr1 was saved and received the ID: 348
-The job S3_GB_2006mmLeemBmJmmFemNmmLAMMPSmmipr1 was saved and received the ID: 349
-The job S3_SLAB_2006mmLeemBmJmmFemNmmLAMMPSmmipr1 was saved and received the ID: 350
-The job S3_GB_2007mmLeemBmJmmFemHmmLAMMPSmmipr1 was saved and received the ID: 351
-The job S3_SLAB_2007mmLeemBmJmmFemHmmLAMMPSmmipr1 was saved and received the ID: 352
-The job S3_GB_2007mmMendelevmMmImmVmFemmLAMMPSmmipr1 was saved and received the ID: 353
-The job S3_SLAB_2007mmMendelevmMmImmVmFemmLAMMPSmmipr1 was saved and received the ID: 354
-The job S3_GB_2008mmHepburnmDmJmmFemCmmLAMMPSmmipr1 was saved and received the ID: 355
-The job S3_SLAB_2008mmHepburnmDmJmmFemCmmLAMMPSmmipr1 was saved and received the ID: 356
-The job S3_GB_2008mmSamImmFemNbmmLAMMPSmmipr1 was saved and received the ID: 357
-The job S3_SLAB_2008mmSamImmFemNbmmLAMMPSmmipr1 was saved and received the ID: 358
-The job S3_GB_2008mmSamImmFemTimmLAMMPSmmipr1 was saved and received the ID: 359
-The job S3_SLAB_2008mmSamImmFemTimmLAMMPSmmipr1 was saved and received the ID: 360
-The job S3_GB_2009mmBonnymGmmFemCumNimmLAMMPSmmipr1 was saved and received the ID: 361
-The job S3_SLAB_2009mmBonnymGmmFemCumNimmLAMMPSmmipr1 was saved and received the ID: 362
-The job S3_GB_2009mmBonnymGmmFemNimmLAMMPSmmipr1 was saved and received the ID: 363
-The job S3_SLAB_2009mmBonnymGmmFemNimmLAMMPSmmipr1 was saved and received the ID: 364
-The job S3_GB_2009mmKimmHmKmmFemTimCmmLAMMPSmmipr2 was saved and received the ID: 365
-The job S3_SLAB_2009mmKimmHmKmmFemTimCmmLAMMPSmmipr2 was saved and received the ID: 366
-The job S3_GB_2009mmKimmYmMmmFemMnmmLAMMPSmmipr1 was saved and received the ID: 367
-The job S3_SLAB_2009mmKimmYmMmmFemMnmmLAMMPSmmipr1 was saved and received the ID: 368
-The job S3_GB_2009mmOlssonmPmAmTmmFemmLAMMPSmmipr1 was saved and received the ID: 369
-The job S3_SLAB_2009mmOlssonmPmAmTmmFemmLAMMPSmmipr1 was saved and received the ID: 370
-The job S3_GB_2009mmStukowskimAmmFemCrmmLAMMPSmmipr1 was saved and received the ID: 371
-The job S3_SLAB_2009mmStukowskimAmmFemCrmmLAMMPSmmipr1 was saved and received the ID: 372
-The job S3_GB_2010mmKimmHmKmmFemNbmCmmLAMMPSmmipr1 was saved and received the ID: 373
-The job S3_SLAB_2010mmKimmHmKmmFemNbmCmmLAMMPSmmipr1 was saved and received the ID: 374
-The job S3_GB_2010mmLeemEmmFemAlmmLAMMPSmmipr1 was saved and received the ID: 375
-The job S3_SLAB_2010mmLeemEmmFemAlmmLAMMPSmmipr1 was saved and received the ID: 376
-The job S3_GB_2010mmMalerbamLmmFemmLAMMPSmmipr1 was saved and received the ID: 377
-The job S3_SLAB_2010mmMalerbamLmmFemmLAMMPSmmipr1 was saved and received the ID: 378
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:41,995 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_0
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 00:32:39,466 - pyiron_log - WARNING - Job aborted - please remove it and run again! S3_GB_2011mmBonnymGmmFemCrmmLAMMPSmmipr2
-2023-08-11 00:32:39,779 - pyiron_log - WARNING - Job aborted
-2023-08-11 00:32:39,780 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_0 was saved and received the ID: 753
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:42,505 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_0 was saved and received the ID: 754
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:42,972 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_1 was saved and received the ID: 755
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:43,630 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_1 was saved and received the ID: 756
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:44,299 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2 was saved and received the ID: 757
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:44,694 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_2 was saved and received the ID: 758
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:45,081 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_3 was saved and received the ID: 759
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:45,611 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_3 was saved and received the ID: 760
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:46,006 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_4
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_4 was saved and received the ID: 761
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:46,599 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_4
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_4 was saved and received the ID: 762
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:47,134 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_5
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_5 was saved and received the ID: 763
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:47,747 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_5
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_5 was saved and received the ID: 764
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:48,523 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_6
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_6 was saved and received the ID: 767
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:49,542 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_6
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_6 was saved and received the ID: 769
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:50,458 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_7
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_7 was saved and received the ID: 772
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:50,986 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_7
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_7 was saved and received the ID: 773
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:51,404 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_8
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_8 was saved and received the ID: 774
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:51,922 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_8
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_8 was saved and received the ID: 776
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:52,534 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_9
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_9 was saved and received the ID: 778
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:53,346 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_9
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_9 was saved and received the ID: 779
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:54,283 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_10
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_10 was saved and received the ID: 782
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:54,959 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_10
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_10 was saved and received the ID: 784
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:55,533 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_11
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_11 was saved and received the ID: 785
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:56,130 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_11
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_11 was saved and received the ID: 787
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:56,690 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_12
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_12 was saved and received the ID: 789
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:57,221 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_12
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_12 was saved and received the ID: 791
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:57,752 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_13
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_13 was saved and received the ID: 792
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:58,253 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_13
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_13 was saved and received the ID: 794
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:58,764 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_14
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_14 was saved and received the ID: 795
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:59,246 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_14
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_14 was saved and received the ID: 797
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:23:59,804 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_15
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_15 was saved and received the ID: 799
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:00,841 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_15
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_15 was saved and received the ID: 801
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:01,763 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_16
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_16 was saved and received the ID: 804
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:03,176 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_16
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_16 was saved and received the ID: 806
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:04,699 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_17
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_17 was saved and received the ID: 810
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:05,144 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_17
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_17 was saved and received the ID: 811
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:05,693 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_18
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_18 was saved and received the ID: 813
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:06,304 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_18
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_18 was saved and received the ID: 815
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:06,754 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_19
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_19 was saved and received the ID: 816
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:07,382 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_19
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_19 was saved and received the ID: 817
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:08,255 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_20
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_20 was saved and received the ID: 820
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:08,833 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_20
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_20 was saved and received the ID: 821
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:09,356 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_21
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_21 was saved and received the ID: 822
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:10,014 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_21
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_21 was saved and received the ID: 824
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:10,606 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_22
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_22 was saved and received the ID: 826
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:11,121 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_22
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_22 was saved and received the ID: 827
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:11,512 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_23
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_23 was saved and received the ID: 828
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:12,011 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_23
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_23 was saved and received the ID: 829
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:12,611 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_24
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_24 was saved and received the ID: 831
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:13,210 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_24
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_24 was saved and received the ID: 833
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:13,712 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_25 was saved and received the ID: 835
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:14,270 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_25 was saved and received the ID: 836
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:14,789 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_26
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_26 was saved and received the ID: 838
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:15,295 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_26
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_26 was saved and received the ID: 839
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:15,700 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_27
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_27 was saved and received the ID: 840
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:17,235 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_27
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_27 was saved and received the ID: 842
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:18,921 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_28
+2023-08-11 18:24:19,237 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:24:19,240 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
 Reading data file ...
   orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
   1 by 1 by 1 MPI processor grid
   reading atoms ...
   48 atoms
-  read_data CPU = 0.000 seconds
+  read_data CPU = 0.001 seconds
 ERROR on proc 0: Not a valid floating-point number: &#39;Infinity&#39; (src/MANYBODY/pair_eam_alloy.cpp:174)
 Last command: pair_coeff * * eam/alloy FeCr_d.eam.alloy Fe Cr
+
+2023-08-11 18:24:19,262 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_29
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2011mmBonnymGmmFemCrmmLAMMPSmmipr2 was saved and received the ID: 379
-The job S3_GB_2011mmBonnymGmmFemCrmmLAMMPSmmipr3 was saved and received the ID: 380
-The job S3_SLAB_2011mmBonnymGmmFemCrmmLAMMPSmmipr3 was saved and received the ID: 381
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_28 was saved and received the ID: 846
+The job S3_GB_29 was saved and received the ID: 847
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 00:32:42,287 - pyiron_log - WARNING - Job aborted - please remove it and run again! S3_GB_2011mmBonnymGmmFemNimCrmmLAMMPSmmipr1
-2023-08-11 00:32:42,537 - pyiron_log - WARNING - Job aborted
-2023-08-11 00:32:42,538 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:20,537 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_29
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_29 was saved and received the ID: 848
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:21,809 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_30
+2023-08-11 18:24:21,989 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:24:21,990 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
 Reading data file ...
   orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
   1 by 1 by 1 MPI processor grid
@@ -679,31 +846,71 @@ Reading data file ...
   read_data CPU = 0.000 seconds
 ERROR on proc 0: Not a valid floating-point number: &#39;INF&#39; (src/MANYBODY/pair_eam_alloy.cpp:174)
 Last command: pair_coeff * * FeNiCr.eam.alloy Fe Ni Cr
+
+2023-08-11 18:24:22,001 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_31
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2011mmBonnymGmmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 382
-The job S3_GB_2011mmBonnymGmmFemNimCrmmLAMMPSmmipr2 was saved and received the ID: 383
-The job S3_SLAB_2011mmBonnymGmmFemNimCrmmLAMMPSmmipr2 was saved and received the ID: 384
-The job S3_GB_2011mmChiesamSmmFem33mmLAMMPSmmipr1 was saved and received the ID: 385
-The job S3_SLAB_2011mmChiesamSmmFem33mmLAMMPSmmipr1 was saved and received the ID: 386
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_30 was saved and received the ID: 849
+The job S3_GB_31 was saved and received the ID: 850
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:22,754 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_31
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2012mmKomWmSmmFemPmmLAMMPSmmipr1 was saved and received the ID: 387
-The job S3_SLAB_2012mmKomWmSmmFemPmmLAMMPSmmipr1 was saved and received the ID: 388
-The job S3_GB_2012mmProvillemLmmFemmLAMMPSmmipr1 was saved and received the ID: 389
-The job S3_SLAB_2012mmProvillemLmmFemmLAMMPSmmipr1 was saved and received the ID: 390
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_31 was saved and received the ID: 852
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 00:32:49,777 - pyiron_log - WARNING - Job aborted - please remove it and run again! S3_GB_2013mmBonnymGmmFemCrmWmmLAMMPSmmipr2
-2023-08-11 00:32:50,166 - pyiron_log - WARNING - Job aborted
-2023-08-11 00:32:50,168 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:23,589 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_32
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_32 was saved and received the ID: 854
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:24,231 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_32
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_32 was saved and received the ID: 856
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:25,081 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_33
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_33 was saved and received the ID: 858
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:25,678 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_33
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_33 was saved and received the ID: 860
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:26,191 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_34
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_34 was saved and received the ID: 862
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:26,817 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_34
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_34 was saved and received the ID: 864
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:27,471 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_35
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_35 was saved and received the ID: 866
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:29,181 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_35
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_35 was saved and received the ID: 869
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:31,167 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_36
+2023-08-11 18:24:31,445 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:24:31,447 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
 Reading data file ...
   orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
   1 by 1 by 1 MPI processor grid
@@ -712,22 +919,59 @@ Reading data file ...
   read_data CPU = 0.000 seconds
 ERROR on proc 0: Not a valid floating-point number: &#39;Infinity&#39; (src/MANYBODY/pair_eam_alloy.cpp:174)
 Last command: pair_coeff * * eam/alloy FeCrW_d.eam.alloy Fe Cr W
+
+2023-08-11 18:24:31,461 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_37
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2013mmBonnymGmmFemCrmWmmLAMMPSmmipr2 was saved and received the ID: 391
-The job S3_GB_2013mmBonnymGmmFemCrmWmmLAMMPSmmipr3 was saved and received the ID: 392
-The job S3_SLAB_2013mmBonnymGmmFemCrmWmmLAMMPSmmipr3 was saved and received the ID: 393
-The job S3_GB_2013mmBonnymGmmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 394
-The job S3_SLAB_2013mmBonnymGmmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 395
-The job S3_GB_2013mmBonnymGmmFemWmmLAMMPSmmipr1 was saved and received the ID: 396
-The job S3_SLAB_2013mmBonnymGmmFemWmmLAMMPSmmipr1 was saved and received the ID: 397
-The job S3_GB_2013mmHenrikssonmKmOmEmmFemCmmLAMMPSmmipr1 was saved and received the ID: 398
-The job S3_SLAB_2013mmHenrikssonmKmOmEmmFemCmmLAMMPSmmipr1 was saved and received the ID: 399
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_36 was saved and received the ID: 873
+The job S3_GB_37 was saved and received the ID: 875
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 00:32:58,116 - pyiron_log - WARNING - Job aborted - please remove it and run again! S3_GB_2014mmLiyanagemLmSmImmFemCmmLAMMPSmmipr2
-2023-08-11 00:32:58,402 - pyiron_log - WARNING - Job aborted
-2023-08-11 00:32:58,402 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:33,364 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_37
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_37 was saved and received the ID: 877
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:35,558 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_38
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_38 was saved and received the ID: 881
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:36,227 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_38
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_38 was saved and received the ID: 882
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:36,900 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_39
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_39 was saved and received the ID: 884
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:37,595 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_39
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_39 was saved and received the ID: 885
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:38,209 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_40
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_40 was saved and received the ID: 886
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:38,669 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_40
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_40 was saved and received the ID: 888
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:39,237 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_41
+2023-08-11 18:24:39,400 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:24:39,401 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
 Reading data file ...
   orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
   1 by 1 by 1 MPI processor grid
@@ -737,14 +981,14 @@ Reading data file ...
 ERROR on proc 0: Not a valid integer number: &#39;0.000000&#39; (src/MEAM/pair_meam.cpp:466)
 Last command: pair_coeff * * Fe3C_library_Liyanage_2014.meam Fe C Fe3C_Liyanage_2014.meam Fe C
 
-2023-08-11 00:32:58,417 - pyiron_log - WARNING - Job aborted - please remove it and run again! S3_GB_2015mmAsadimEmmFemmLAMMPSmmipr1
+2023-08-11 18:24:39,414 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_42
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2014mmLiyanagemLmSmImmFemCmmLAMMPSmmipr2 was saved and received the ID: 400
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_41 was saved and received the ID: 890
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 00:32:58,700 - pyiron_log - WARNING - Job aborted
-2023-08-11 00:32:58,701 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:39,602 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:24:39,603 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
 Reading data file ...
   orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
   1 by 1 by 1 MPI processor grid
@@ -753,30 +997,83 @@ Reading data file ...
   read_data CPU = 0.000 seconds
 ERROR on proc 0: Not a valid integer number: &#39;-5.000000&#39; (src/MEAM/pair_meam.cpp:466)
 Last command: pair_coeff * * library.Fe.meam Fe Fe.meam Fe
+
+2023-08-11 18:24:39,616 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_43
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2015mmAsadimEmmFemmLAMMPSmmipr1 was saved and received the ID: 401
-The job S3_GB_2015mmEichmSmMmmFemCrmmLAMMPSmmipr1 was saved and received the ID: 402
-The job S3_SLAB_2015mmEichmSmMmmFemCrmmLAMMPSmmipr1 was saved and received the ID: 403
-The job S3_GB_2017mmBelandmLmKmmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 404
-The job S3_SLAB_2017mmBelandmLmKmmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 405
-The job S3_GB_2017mmChoimWmMmmComFemmLAMMPSmmipr1 was saved and received the ID: 406
-The job S3_SLAB_2017mmChoimWmMmmComFemmLAMMPSmmipr1 was saved and received the ID: 407
-The job S3_GB_2017mmWumCmmNimCrmFemmLAMMPSmmipr1 was saved and received the ID: 408
-The job S3_SLAB_2017mmWumCmmNimCrmFemmLAMMPSmmipr1 was saved and received the ID: 409
-The job S3_GB_2017mmWumCmmNimFemmLAMMPSmmipr1 was saved and received the ID: 410
-The job S3_SLAB_2017mmWumCmmNimFemmLAMMPSmmipr1 was saved and received the ID: 411
-The job S3_GB_2018mmChoimWmMmmComNimCrmFemMnmmLAMMPSmmipr1 was saved and received the ID: 412
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_42 was saved and received the ID: 891
+The job S3_GB_43 was saved and received the ID: 892
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-2023-08-11 00:33:06,540 - pyiron_log - WARNING - Job aborted - please remove it and run again! S3_GB_2018mmEtesamimSmAmmFemmLAMMPSmmipr1
-2023-08-11 00:33:06,854 - pyiron_log - WARNING - Job aborted
-2023-08-11 00:33:06,856 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:40,877 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_43
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_43 was saved and received the ID: 894
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:42,155 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_44
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_44 was saved and received the ID: 897
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:42,892 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_44
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_44 was saved and received the ID: 899
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:43,551 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_45
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_45 was saved and received the ID: 901
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:44,036 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_45
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_45 was saved and received the ID: 903
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:44,585 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_46
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_46 was saved and received the ID: 904
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:45,151 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_46
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_46 was saved and received the ID: 906
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:45,766 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_47
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_47 was saved and received the ID: 908
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:46,319 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_47
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_47 was saved and received the ID: 910
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:46,729 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_48
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_48 was saved and received the ID: 911
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:47,254 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_48
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_48 was saved and received the ID: 912
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:47,742 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_49
+2023-08-11 18:24:47,922 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:24:47,924 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
 Reading data file ...
   orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
   1 by 1 by 1 MPI processor grid
@@ -785,374 +1082,1199 @@ Reading data file ...
   read_data CPU = 0.000 seconds
 ERROR on proc 0: Not a valid integer number: &#39;-5.000000&#39; (src/MEAM/pair_meam.cpp:466)
 Last command: pair_coeff * * library.Fe.meam Fe Fe.meam Fe
+
+2023-08-11 18:24:47,935 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_50
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2018mmEtesamimSmAmmFemmLAMMPSmmipr1 was saved and received the ID: 413
-The job S3_GB_2018mmFarkasmDmmFemNimCrmComCummLAMMPSmmipr2 was saved and received the ID: 414
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_49 was saved and received the ID: 913
+The job S3_GB_50 was saved and received the ID: 914
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:48,413 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_50
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2018mmJeongmGmUmmPdmFemmLAMMPSmmipr1 was saved and received the ID: 415
-The job S3_SLAB_2018mmJeongmGmUmmPdmFemmLAMMPSmmipr1 was saved and received the ID: 416
-The job S3_GB_2018mmZhoumXmWmmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 417
-The job S3_SLAB_2018mmZhoumXmWmmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 418
-The job S3_GB_2018mmZhoumXmWmmFemNimCrmmLAMMPSmmipr2 was saved and received the ID: 419
-The job S3_SLAB_2018mmZhoumXmWmmFemNimCrmmLAMMPSmmipr2 was saved and received the ID: 420
-The job S3_GB_2019mmAslammImmFemMnmSimCmmLAMMPSmmipr1 was saved and received the ID: 421
-The job S3_SLAB_2019mmAslammImmFemMnmSimCmmLAMMPSmmipr1 was saved and received the ID: 422
-The job S3_GB_2019mmByggmastarmJmmFemOmmLAMMPSmmipr1 was saved and received the ID: 423
-The job S3_SLAB_2019mmByggmastarmJmmFemOmmLAMMPSmmipr1 was saved and received the ID: 424
-The job S3_GB_2019mmMendelevmMmImmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 425
-The job S3_SLAB_2019mmMendelevmMmImmFemNimCrmmLAMMPSmmipr1 was saved and received the ID: 426
-The job S3_GB_2020mmByggmastarmJmmFemmLAMMPSmmipr1 was saved and received the ID: 427
-The job S3_SLAB_2020mmByggmastarmJmmFemmLAMMPSmmipr1 was saved and received the ID: 428
-The job S3_GB_2020mmFarkasmDmmFemNimCrmComAlmmLAMMPSmmipr1 was saved and received the ID: 429
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_50 was saved and received the ID: 915
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:48,928 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_51
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2020mmGrogermRmmComCrmFemMnmNimmLAMMPSmmipr1 was saved and received the ID: 430
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_51 was saved and received the ID: 916
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-2023-08-11 00:33:19,020 - pyiron_log - WARNING - Job aborted - please remove it and run again! S3_GB_2020mmMorimHmmFemmLAMMPSmmipr1
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:49,392 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_51
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_2021mmStarikovmSmmFemmLAMMPSmmipr1 was saved and received the ID: 432
-The job S3_SLAB_2021mmStarikovmSmmFemmLAMMPSmmipr1 was saved and received the ID: 433
-The job S3_GB_2021mmStarikovmSmmFemmLAMMPSmmipr2 was saved and received the ID: 434
-The job S3_SLAB_2021mmStarikovmSmmFemmLAMMPSmmipr2 was saved and received the ID: 435
-The job S3_GB_2021mmWenmMmmFemHmmLAMMPSmmipr1 was saved and received the ID: 436
-The job S3_SLAB_2021mmWenmMmmFemHmmLAMMPSmmipr1 was saved and received the ID: 437
-The job S3_GB_2022mmMahatamAmmAlmFemmLAMMPSmmipr1 was saved and received the ID: 438
-The job S3_SLAB_2022mmMahatamAmmAlmFemmLAMMPSmmipr1 was saved and received the ID: 439
-The job S3_GB_2022mmStarikovmSmmFemCrmHmmLAMMPSmmipr1 was saved and received the ID: 440
-The job S3_SLAB_2022mmStarikovmSmmFemCrmHmmLAMMPSmmipr1 was saved and received the ID: 441
-The job S3_GB_2022mmSunmYmmFemmLAMMPSmmipr1 was saved and received the ID: 442
-The job S3_SLAB_2022mmSunmYmmFemmLAMMPSmmipr1 was saved and received the ID: 443
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_51 was saved and received the ID: 917
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
-Exception ignored in: &lt;function FileHDFio.__del__ at 0x7f485597edd0&gt;
-Traceback (most recent call last):
-  File &quot;/root/github_pyiron/pyiron_base/pyiron_base/storage/hdfio.py&quot;, line 877, in __del__
-    del self._file_name
-AttributeError: _file_name
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:49,840 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_52
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_52 was saved and received the ID: 918
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:50,402 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_52
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_52 was saved and received the ID: 919
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:50,952 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_53
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_53 was saved and received the ID: 920
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:51,591 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_53
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_53 was saved and received the ID: 921
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:52,201 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_54
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_54 was saved and received the ID: 922
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:52,728 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_54
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_54 was saved and received the ID: 923
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:53,211 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_55
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_55 was saved and received the ID: 924
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:53,628 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_55
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_55 was saved and received the ID: 925
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:54,072 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_56
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_56 was saved and received the ID: 926
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:54,862 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_56
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_56 was saved and received the ID: 927
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:55,657 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_57
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_57 was saved and received the ID: 928
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:56,127 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_57
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_57 was saved and received the ID: 929
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:56,599 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_58
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_58 was saved and received the ID: 930
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:57,133 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_58
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_58 was saved and received the ID: 931
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:57,630 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_59
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_59 was saved and received the ID: 932
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:24:58,891 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_59
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_59 was saved and received the ID: 933
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:00,164 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_60
+2023-08-11 18:25:00,308 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_61
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_61 was saved and received the ID: 935
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:00,776 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_61
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_61 was saved and received the ID: 936
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:01,288 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_62
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_62 was saved and received the ID: 937
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:01,949 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_62
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_62 was saved and received the ID: 939
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:02,637 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_63
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_63 was saved and received the ID: 941
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:03,243 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_63
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_63 was saved and received the ID: 942
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:03,913 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_64
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_64 was saved and received the ID: 943
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:05,205 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_64
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_64 was saved and received the ID: 945
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:06,133 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_65
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_65 was saved and received the ID: 948
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:06,610 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_65
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_65 was saved and received the ID: 949
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:07,118 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_66
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_66 was saved and received the ID: 950
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:07,572 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_66
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_66 was saved and received the ID: 951
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:08,032 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_67
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_67 was saved and received the ID: 952
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:08,641 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_SLAB_67
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_SLAB_67 was saved and received the ID: 954
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:09,197 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_68
+2023-08-11 18:25:09,374 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:09,375 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_AcklandBaconCalder_1997_Fe__MO_142799717516_005
+
+2023-08-11 18:25:09,388 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_69
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_68 was saved and received the ID: 955
+The job S3_GB_69 was saved and received the ID: 956
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:09,580 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:09,581 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_AcklandMendelevSrolovitz_2004_FeP__MO_884343146310_005
+
+2023-08-11 18:25:09,593 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_70
+2023-08-11 18:25:09,775 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:09,776 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_BonnyCastinBullens_2013_FeW__MO_737567242631_000
+
+2023-08-11 18:25:09,788 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_71
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_70 was saved and received the ID: 957
+The job S3_GB_71 was saved and received the ID: 958
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:09,964 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:09,966 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_BonnyCastinTerentyev_2013_FeNiCr__MO_763197941039_000
+
+2023-08-11 18:25:09,980 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_72
+2023-08-11 18:25:10,168 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:10,169 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_BonnyPasianotCastin_2009_FeCuNi__MO_469343973171_005
+
+2023-08-11 18:25:10,183 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_73
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_72 was saved and received the ID: 959
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:10,388 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:10,389 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.005 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_BonnyPasianotMalerba_2009_FeNi__MO_267721408934_005
+
+2023-08-11 18:25:10,403 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_74
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_73 was saved and received the ID: 960
+The job S3_GB_74 was saved and received the ID: 961
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:10,557 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:10,558 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_ChamatiPapanicolaouMishin_2006_Fe__MO_960699513424_000
+
+2023-08-11 18:25:10,572 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_75
+2023-08-11 18:25:10,739 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:10,741 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_HepburnAckland_2008_FeC__MO_143977152728_005
+
+2023-08-11 18:25:10,755 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_76
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_75 was saved and received the ID: 962
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:10,996 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:10,997 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_Marinica_2007_Fe__MO_466808877130_000
+
+2023-08-11 18:25:11,013 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_77
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_76 was saved and received the ID: 963
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:11,254 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:11,255 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_Marinica_2011_Fe__MO_255315407910_000
+
+2023-08-11 18:25:11,268 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_78
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_77 was saved and received the ID: 965
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:11,483 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:11,485 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_MendelevBorovikov_2020_FeNiCr__MO_922363340570_000
+
+2023-08-11 18:25:11,498 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_79
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_78 was saved and received the ID: 966
+The job S3_GB_79 was saved and received the ID: 967
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:11,680 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:11,683 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_MendelevHanSon_2007_VFe__MO_249706810527_005
+
+2023-08-11 18:25:11,744 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_80
+2023-08-11 18:25:11,990 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:11,991 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_MendelevHanSrolovitz_2003Potential2_Fe__MO_769582363439_005
+
+2023-08-11 18:25:12,004 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_81
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_80 was saved and received the ID: 969
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:12,254 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:12,255 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_MendelevHanSrolovitz_2003Potential5_Fe__MO_942420706858_005
+
+2023-08-11 18:25:12,270 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_82
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_81 was saved and received the ID: 970
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:12,452 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:12,453 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_MendelevHanSrolovitz_2003_Fe__MO_807997826449_000
+
+2023-08-11 18:25:12,465 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_83
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_82 was saved and received the ID: 971
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:12,759 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:12,760 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_MendelevSrolovitzAckland_2005_AlFe__MO_577453891941_005
+
+2023-08-11 18:25:12,774 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_84
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_83 was saved and received the ID: 973
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:12,979 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:12,980 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_Mendelev_2003_Fe__MO_546673549085_000
+
+2023-08-11 18:25:13,009 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_85
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_84 was saved and received the ID: 974
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:13,258 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:13,259 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_ZhouJohnsonWadley_2004NISTretabulation_Fe__MO_681088298208_000
+
+2023-08-11 18:25:13,297 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_86
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_85 was saved and received the ID: 975
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:13,542 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:13,543 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Dynamo_ZhouJohnsonWadley_2004_Fe__MO_650279905230_005
+
+2023-08-11 18:25:13,556 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_87
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_86 was saved and received the ID: 977
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:13,854 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:13,855 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_Magnetic2GQuintic_ChiesaDerletDudarev_2011_Fe__MO_140444321607_002
+
+2023-08-11 18:25:13,869 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_88
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_87 was saved and received the ID: 978
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:14,176 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:14,177 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_MagneticCubic_DudarevDerlet_2005_Fe__MO_135034229282_002
+
+2023-08-11 18:25:14,205 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_89
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_88 was saved and received the ID: 979
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:14,482 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:14,486 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim EAM_MagneticCubic_MendelevHanSrolovitz_2003_Fe__MO_856295952425_002
+
+2023-08-11 18:25:14,535 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_90
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_89 was saved and received the ID: 981
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:14,840 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:14,841 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_AsadiZaeemNouranian_2015_Fe__MO_492310898779_000
+
+2023-08-11 18:25:14,856 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_91
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_90 was saved and received the ID: 983
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:15,161 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:15,162 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_ChoiJoSohn_2018_CoNiCrFeMn__MO_115454747503_000
+
+2023-08-11 18:25:15,186 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_92
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_91 was saved and received the ID: 984
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:15,497 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:15,499 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_ChoiKimSeol_2017_CoFe__MO_179158257180_000
+
+2023-08-11 18:25:15,521 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_93
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_92 was saved and received the ID: 986
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:15,834 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:15,835 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.001 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_EtesamiAsadi_2018_Fe__MO_549900287421_000
+
+2023-08-11 18:25:15,852 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_94
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_93 was saved and received the ID: 988
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:16,105 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:16,106 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_JelinekGrohHorstemeyer_2012_AlSiMgCuFe__MO_262519520678_000
+
+2023-08-11 18:25:16,133 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_95
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_94 was saved and received the ID: 989
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:16,423 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:16,425 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_JeongParkDo_2018_PdFe__MO_924736622203_000
+
+2023-08-11 18:25:16,443 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_96
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_95 was saved and received the ID: 991
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:16,701 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:16,703 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_KimJungLee_2009_FeTiC__MO_110119204723_000
+
+2023-08-11 18:25:16,717 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_97
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_96 was saved and received the ID: 992
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:17,001 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:17,003 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.001 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_KimJungLee_2010_FeNbC__MO_072689718616_000
+
+2023-08-11 18:25:17,025 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_98
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_97 was saved and received the ID: 993
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:17,266 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:17,267 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.003 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_KimLee_2006_PtFe__MO_343168101490_000
+
+2023-08-11 18:25:17,281 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_99
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_98 was saved and received the ID: 994
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:17,505 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:17,506 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_KimShinLee_2009_FeMn__MO_058735400462_000
+
+2023-08-11 18:25:17,523 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_100
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_99 was saved and received the ID: 995
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:17,807 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:17,807 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_KoJimLee_2012_FeP__MO_179420363944_000
+
+2023-08-11 18:25:17,821 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_101
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_100 was saved and received the ID: 997
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:18,020 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:18,021 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_LeeJang_2007_FeH__MO_095610951957_000
+
+2023-08-11 18:25:18,042 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_102
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_101 was saved and received the ID: 998
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:18,360 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:18,363 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_LeeLeeKim_2006_FeN__MO_432861766738_000
+
+2023-08-11 18:25:18,388 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_103
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_102 was saved and received the ID: 999
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:18,631 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:18,632 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_LeeLee_2010_FeAl__MO_332211522050_000
+
+2023-08-11 18:25:18,648 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_104
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_103 was saved and received the ID: 1000
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:18,875 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:18,876 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_LeeWirthShim_2005_FeCu__MO_063626065437_000
+
+2023-08-11 18:25:18,890 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_105
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_104 was saved and received the ID: 1001
+The job S3_GB_105 was saved and received the ID: 1002
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:19,075 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:19,076 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_Lee_2006_FeC__MO_856956178669_000
+
+2023-08-11 18:25:19,089 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_106
+2023-08-11 18:25:19,262 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:19,263 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_LiyanageKimHouze_2014_FeC__MO_075279800195_000
+
+2023-08-11 18:25:19,278 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_107
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_106 was saved and received the ID: 1003
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:19,593 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:19,594 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.001 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_SaLee_2008_FeTi__MO_260546967793_000
+
+2023-08-11 18:25:19,610 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_108
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_107 was saved and received the ID: 1005
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:19,831 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:19,832 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_SaLee_2008_NbFe__MO_162036141261_000
+
+2023-08-11 18:25:19,844 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_109
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_108 was saved and received the ID: 1006
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:20,085 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:20,087 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_WuLeeSu_2017_NiCrFe__MO_912636107108_000
+
+2023-08-11 18:25:20,111 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_110
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_109 was saved and received the ID: 1007
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:20,374 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:20,376 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MEAM_LAMMPS_WuLeeSu_2017_NiFe__MO_321233176498_000
+
+2023-08-11 18:25:20,415 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_111
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_110 was saved and received the ID: 1008
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:20,759 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:20,760 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim MJ_MorrisAgaLevashov_2008_Fe__MO_857282754307_003
+
+2023-08-11 18:25:20,782 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_112
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_111 was saved and received the ID: 1010
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:21,117 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:21,118 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Fe__MO_147603128437_004
+
+2023-08-11 18:25:21,150 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_113
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_112 was saved and received the ID: 1011
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:21,402 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:21,404 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Morse_Shifted_GirifalcoWeizer_1959LowCutoff_Fe__MO_331285495617_004
+
+2023-08-11 18:25:21,442 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_114
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_113 was saved and received the ID: 1012
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:21,739 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:21,740 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Morse_Shifted_GirifalcoWeizer_1959MedCutoff_Fe__MO_984358344196_004
+
+2023-08-11 18:25:21,753 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_115
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_114 was saved and received the ID: 1014
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:21,975 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:21,976 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Tersoff_LAMMPS_MuellerErhartAlbe_2007_Fe__MO_137964310702_003
+
+2023-08-11 18:25:21,994 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_116
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_115 was saved and received the ID: 1015
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:22,239 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:22,240 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_EAMCD_StukowskiSadighErhart_2009_FeCr__SM_775564499513_000
+
+2023-08-11 18:25:22,256 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_117
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_116 was saved and received the ID: 1016
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:22,483 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:22,484 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_EAM_BonnyCastinBullens_2013_FeCrW__SM_699257350704_000
+
+2023-08-11 18:25:22,498 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_118
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_117 was saved and received the ID: 1017
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:22,811 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:22,812 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_EAM_BonnyPasianotTerentyev_2011_FeCr__SM_237089298463_000
+
+2023-08-11 18:25:22,828 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_119
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_118 was saved and received the ID: 1018
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:23,095 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:23,097 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_MEAM_AsadiZaeemNouranian_2015_Fe__SM_042630680993_000
+
+2023-08-11 18:25:23,116 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_120
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_119 was saved and received the ID: 1020
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:23,458 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:23,460 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_MEAM_EtesamiAsadi_2018_Fe__SM_267016608755_000
+
+2023-08-11 18:25:23,509 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_121
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_120 was saved and received the ID: 1021
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:23,845 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:23,848 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_MEAM_JelinekGrohHorstemeyer_2012_AlSiMgCuFe__SM_656517352485_000
+
+2023-08-11 18:25:23,862 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_122
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_121 was saved and received the ID: 1023
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:24,075 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:24,076 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_MEAM_KimJungLee_2009_FeTiC__SM_531038274471_000
+
+2023-08-11 18:25:24,093 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_123
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_122 was saved and received the ID: 1024
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:24,317 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:24,318 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_MEAM_LiyanageKimHouze_2014_FeC__SM_652425777808_000
+
+2023-08-11 18:25:24,334 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_124
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_123 was saved and received the ID: 1025
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:24,682 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:24,683 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_ReaxFF_AryanpourVanDuinKubicki_2010_FeHO__SM_222964216001_001
+
+2023-08-11 18:25:24,702 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_125
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_124 was saved and received the ID: 1026
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:24,982 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:24,983 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_TersoffZBL_ByggmastarGranberg_2020_Fe__SM_958863895234_000
+
+2023-08-11 18:25:25,000 - pyiron_log - WARNING - No HDF5 file found - remove database entry and create new job! S3_GB_126
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_125 was saved and received the ID: 1028
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2023-08-11 18:25:25,376 - pyiron_log - WARNING - Job aborted
+2023-08-11 18:25:25,378 - pyiron_log - WARNING - LAMMPS (28 Mar 2023 - Update 1)
+Reading data file ...
+  orthogonal box = (0 0 0) to (4.0048391 6.9365848 19.619625)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.000 seconds
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:828)
+Last command: pair_style kim Sim_LAMMPS_TersoffZBL_HenrikssonBjorkasNordlund_2013_FeC__SM_473463498269_000
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job S3_GB_126 was saved and received the ID: 1029
 </pre></div>
 </div>
 </div>
 </div>
 <p>Construct a dataframe which contains the information about GB energy, and their errors with respect to a DFT computed value.</p>
-<p>The GB energy is from the value computed in this study:</p>
+<p>The GB energy of 1.58 J/m^2 is from the value computed in this study:</p>
 <p>Mai, H.L., Cui, X.Y., Scheiber, D., Romaner, L. and Ringer, S.P., 2022. The segregation of transition metals to iron grain boundaries and their effects on cohesion. Acta materialia, 231, p.117902.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1230,319 +2352,11 @@ AttributeError: _file_name
       <td>12.0</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>2003--Mendelev-M-I--Fe-5--LAMMPS--ipr1</td>
-      <td>1.356</td>
-      <td>0.224</td>
-      <td>14.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2004--Ackland-G-J--Fe-P--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>2004--Zhou-X-W--Fe--LAMMPS--ipr2</td>
-      <td>0.824</td>
-      <td>0.756</td>
-      <td>48.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2005--Lee-B-J--Fe-Cu--LAMMPS--ipr1</td>
-      <td>1.342</td>
-      <td>0.238</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>2005--Mendelev-M-I--Al-Fe--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>2006--Chamati-H--Fe--LAMMPS--ipr1</td>
-      <td>0.000</td>
-      <td>1.580</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>2006--Kim-J--Fe-Pt--LAMMPS--ipr1</td>
-      <td>1.343</td>
-      <td>0.237</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>2006--Lee-B-J--Fe-C--LAMMPS--ipr1</td>
-      <td>1.349</td>
-      <td>0.231</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>2006--Lee-B-J--Fe-N--LAMMPS--ipr1</td>
-      <td>1.349</td>
-      <td>0.231</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>2007--Lee-B-J--Fe-H--LAMMPS--ipr1</td>
-      <td>1.349</td>
-      <td>0.231</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>2007--Mendelev-M-I--V-Fe--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>2008--Hepburn-D-J--Fe-C--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>2008--Sa-I--Fe-Nb--LAMMPS--ipr1</td>
-      <td>1.342</td>
-      <td>0.238</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>2008--Sa-I--Fe-Ti--LAMMPS--ipr1</td>
-      <td>1.343</td>
-      <td>0.237</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>2009--Bonny-G--Fe-Cu-Ni--LAMMPS--ipr1</td>
-      <td>1.386</td>
-      <td>0.194</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>2009--Bonny-G--Fe-Ni--LAMMPS--ipr1</td>
-      <td>1.386</td>
-      <td>0.194</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>2009--Kim-H-K--Fe-Ti-C--LAMMPS--ipr2</td>
-      <td>1.343</td>
-      <td>0.237</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>2009--Kim-Y-M--Fe-Mn--LAMMPS--ipr1</td>
-      <td>1.349</td>
-      <td>0.231</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>2009--Olsson-P-A-T--Fe--LAMMPS--ipr1</td>
-      <td>0.000</td>
-      <td>1.580</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>2009--Stukowski-A--Fe-Cr--LAMMPS--ipr1</td>
-      <td>1.386</td>
-      <td>0.194</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>2010--Kim-H-K--Fe-Nb-C--LAMMPS--ipr1</td>
-      <td>1.343</td>
-      <td>0.237</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>2010--Lee-E--Fe-Al--LAMMPS--ipr1</td>
-      <td>1.342</td>
-      <td>0.238</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>2010--Malerba-L--Fe--LAMMPS--ipr1</td>
-      <td>1.549</td>
-      <td>0.031</td>
-      <td>2.0</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>2011--Bonny-G--Fe-Cr--LAMMPS--ipr3</td>
-      <td>1.386</td>
-      <td>0.194</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>2011--Bonny-G--Fe-Ni-Cr--LAMMPS--ipr2</td>
-      <td>0.364</td>
-      <td>1.216</td>
-      <td>77.0</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>2011--Chiesa-S--Fe-33--LAMMPS--ipr1</td>
-      <td>1.052</td>
-      <td>0.528</td>
-      <td>33.0</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>2012--Ko-W-S--Fe-P--LAMMPS--ipr1</td>
-      <td>1.343</td>
-      <td>0.237</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>2012--Proville-L--Fe--LAMMPS--ipr1</td>
-      <td>-0.000</td>
-      <td>1.580</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>2013--Bonny-G--Fe-Cr-W--LAMMPS--ipr3</td>
-      <td>1.386</td>
-      <td>0.194</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>2013--Bonny-G--Fe-Ni-Cr--LAMMPS--ipr1</td>
-      <td>-0.318</td>
-      <td>1.898</td>
-      <td>120.0</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>2013--Bonny-G--Fe-W--LAMMPS--ipr1</td>
-      <td>1.386</td>
-      <td>0.194</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>2013--Henriksson-K-O-E--Fe-C--LAMMPS--ipr1</td>
-      <td>1.499</td>
-      <td>0.081</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>2015--Eich-S-M--Fe-Cr--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>2017--Beland-L-K--Fe-Ni-Cr--LAMMPS--ipr1</td>
-      <td>0.363</td>
-      <td>1.217</td>
-      <td>77.0</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>2017--Choi-W-M--Co-Fe--LAMMPS--ipr1</td>
-      <td>1.342</td>
-      <td>0.238</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>2017--Wu-C--Ni-Cr-Fe--LAMMPS--ipr1</td>
-      <td>1.342</td>
-      <td>0.238</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>2017--Wu-C--Ni-Fe--LAMMPS--ipr1</td>
-      <td>1.342</td>
-      <td>0.238</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>2018--Jeong-G-U--Pd-Fe--LAMMPS--ipr1</td>
-      <td>1.343</td>
-      <td>0.237</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>2018--Zhou-X-W--Fe-Ni-Cr--LAMMPS--ipr1</td>
-      <td>-0.000</td>
-      <td>1.580</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>2018--Zhou-X-W--Fe-Ni-Cr--LAMMPS--ipr2</td>
-      <td>-0.000</td>
-      <td>1.580</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>2019--Aslam-I--Fe-Mn-Si-C--LAMMPS--ipr1</td>
-      <td>1.386</td>
-      <td>0.194</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>2019--Byggmastar-J--Fe-O--LAMMPS--ipr1</td>
-      <td>1.499</td>
-      <td>0.081</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>2019--Mendelev-M-I--Fe-Ni-Cr--LAMMPS--ipr1</td>
-      <td>0.232</td>
-      <td>1.348</td>
-      <td>85.0</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>2020--Byggmastar-J--Fe--LAMMPS--ipr1</td>
-      <td>1.466</td>
-      <td>0.114</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>2021--Starikov-S--Fe--LAMMPS--ipr1</td>
-      <td>-0.077</td>
-      <td>1.657</td>
-      <td>105.0</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>63</th>
@@ -1581,6 +2395,7 @@ AttributeError: _file_name
     </tr>
   </tbody>
 </table>
+<p>61 rows × 4 columns</p>
 </div></div></div>
 </div>
 <p>Order the potentials by the minimum error wrt. DFT!</p>
@@ -1634,15 +2449,15 @@ AttributeError: _file_name
       <td>2.0</td>
     </tr>
     <tr>
-      <th>40</th>
-      <td>2013--Henriksson-K-O-E--Fe-C--LAMMPS--ipr1</td>
+      <th>55</th>
+      <td>2019--Byggmastar-J--Fe-O--LAMMPS--ipr1</td>
       <td>1.499</td>
       <td>0.081</td>
       <td>5.0</td>
     </tr>
     <tr>
-      <th>55</th>
-      <td>2019--Byggmastar-J--Fe-O--LAMMPS--ipr1</td>
+      <th>40</th>
+      <td>2013--Henriksson-K-O-E--Fe-C--LAMMPS--ipr1</td>
       <td>1.499</td>
       <td>0.081</td>
       <td>5.0</td>
@@ -1655,36 +2470,36 @@ AttributeError: _file_name
       <td>7.0</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>2005--Mendelev-M-I--Al-Fe--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
+      <th>58</th>
+      <td>2020--Farkas-D--Fe-Ni-Cr-Co-Al--LAMMPS--ipr1</td>
+      <td>1.425</td>
+      <td>0.155</td>
+      <td>10.0</td>
     </tr>
     <tr>
-      <th>15</th>
-      <td>2007--Mendelev-M-I--V-Fe--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
+      <th>61</th>
+      <td>2021--Deluigi-O-R--Fe-Ni-Cr-Co-Cu--LAMMPS--ipr1</td>
+      <td>1.425</td>
+      <td>0.155</td>
+      <td>10.0</td>
     </tr>
     <tr>
-      <th>16</th>
-      <td>2008--Hepburn-D-J--Fe-C--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>2015--Eich-S-M--Fe-Cr--LAMMPS--ipr1</td>
-      <td>1.404</td>
-      <td>0.176</td>
-      <td>11.0</td>
+      <th>50</th>
+      <td>2018--Farkas-D--Fe-Ni-Cr-Co-Cu--LAMMPS--ipr2</td>
+      <td>1.425</td>
+      <td>0.155</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>6</th>
       <td>2004--Ackland-G-J--Fe-P--LAMMPS--ipr1</td>
+      <td>1.404</td>
+      <td>0.176</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2005--Mendelev-M-I--Al-Fe--LAMMPS--ipr1</td>
       <td>1.404</td>
       <td>0.176</td>
       <td>11.0</td>
@@ -1727,12 +2542,12 @@ AttributeError: _file_name
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="example.html"
+       href="README.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">pyiron example notebook</p>
+        <p class="prev-next-title">pyiron LAMMPS job</p>
       </div>
     </a>
 </div></div>
